@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+}
+.app-container {
+  max-width: 600px;
+  width: 100%;
+}
+/* header elements stytle*/
+.header {
+  background: url("img/pexels-valeriya-1639565.jpg") center center/cover;
+  background-position: 80%;
+  height: 168px;
+  color: #ffffff;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-top: 3.75rem;
+  align-items: flex-start;
+}
+.heading {
+  margin: auto 0 auto 0;
+}
+.container p {
+  margin: auto 0 auto 0;
+}
+/* main stytle*/
+.food {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto 1rem;
+  border-bottom: 1px solid #d2d2d2;
+  font-weight: 100;
+}
+.food-details {
+  display: flex;
+  align-items: center;
+}
+.food-emoji {
+  display: inline;
+  font-size: 5.625rem;
+}
+.food-specs {
+  margin-left: 1rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.food-specs h2,
+.food-specs p {
+  margin: 0.5rem 0;
+}
+.food-specs .ingredients {
+  color: #8b8b8b;
+}
+.add-btn {
+  border: #dedede 1px solid;
+  border-radius: 50%;
+}
+.add-btn:hover {
+  border: #16db99 1px solid;
+  color: #fff;
+  background-color: #16db99;
+  cursor: pointer;
+}
+
+/* checkout section style*/
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.checkout.hidden,
+#payment-form-section.hidden {
+  display: none;
+}
+
+.checkout h2.title {
+  align-self: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#items-list {
+  width: 100%;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 5px 0;
+  font-size: 1rem;
+}
+
+.order-item > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.remove-btn {
+  display: inline;
+  color: #888;
+  font-size: 0.75em;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.remove-btn:hover {
+  color: #16db99;
+}
+
+.item-price {
+  font-weight: 500;
+  text-align: right;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 0;
+  border-top: 2px solid #333;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.complete-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #16db99;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.complete-btn:hover {
+  background-color: #059669;
+}
+
+/*payment section styling*/
+
+#payment-form-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+#payment-form-section.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-form {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 50px 25px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  padding: 0.5rem 2rem;
+}
+
+.payment-heading {
+  text-align: center;
+}
+
+.payment-form input {
+  margin: 1rem 0;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px #757575 solid;
+  font-size: 1rem;
+}
+.pay-btn {
+  margin: 1rem 0;
+  padding: 0.8rem;
+  background-color: #16db99;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.pay-btn:hover {
+  background-color: #059669;
+}
+
+/* Success message section */
+.confirmation-message-box {
+  background-color: #ecfdf5;
+  color: #047857;
+  padding: 40px 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.confirmation-message {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+#new-order-btn {
+  background-color: #16db99;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+#new-order-btn:hover {
+  background-color: #059669;
+}
