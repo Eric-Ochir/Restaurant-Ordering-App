@@ -1,16 +1,20 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
   font-weight: 100;
 }
+
 .app-container {
   max-width: 600px;
   width: 100%;
+  margin: 0 auto;
 }
+
 /* header elements stytle*/
 .header {
   background: url("img/pexels-valeriya-1639565.jpg") center center/cover;
@@ -18,6 +22,7 @@ body {
   height: 168px;
   color: #ffffff;
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -26,12 +31,15 @@ body {
   padding-top: 3.75rem;
   align-items: flex-start;
 }
+
 .heading {
   margin: auto 0 auto 0;
 }
+
 .container p {
   margin: auto 0 auto 0;
 }
+
 /* main stytle*/
 .food {
   height: 140px;
@@ -42,14 +50,17 @@ body {
   border-bottom: 1px solid #d2d2d2;
   font-weight: 100;
 }
+
 .food-details {
   display: flex;
   align-items: center;
 }
+
 .food-emoji {
   display: inline;
   font-size: 5.625rem;
 }
+
 .food-specs {
   margin-left: 1rem;
   text-align: left;
@@ -61,13 +72,16 @@ body {
 .food-specs p {
   margin: 0.5rem 0;
 }
+
 .food-specs .ingredients {
   color: #8b8b8b;
 }
+
 .add-btn {
   border: #dedede 1px solid;
   border-radius: 50%;
 }
+
 .add-btn:hover {
   border: #16db99 1px solid;
   color: #fff;
@@ -109,7 +123,7 @@ body {
   font-size: 1rem;
 }
 
-.order-item > div {
+.order-item>div {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -123,6 +137,7 @@ body {
   text-decoration: underline;
   transition: color 0.2s;
 }
+
 .remove-btn:hover {
   color: #16db99;
 }
@@ -154,6 +169,7 @@ body {
   cursor: pointer;
   transition: background-color 0.2s;
 }
+
 .complete-btn:hover {
   background-color: #059669;
 }
@@ -199,6 +215,7 @@ body {
   border: 1px #757575 solid;
   font-size: 1rem;
 }
+
 .pay-btn {
   margin: 1rem 0;
   padding: 0.8rem;
@@ -210,6 +227,7 @@ body {
   cursor: pointer;
   transition: background-color 0.2s;
 }
+
 .pay-btn:hover {
   background-color: #059669;
 }
@@ -228,11 +246,13 @@ body {
   flex-direction: column;
   gap: 20px;
 }
+
 .confirmation-message {
   font-size: 1.5rem;
   font-weight: 600;
   margin: 0;
 }
+
 #new-order-btn {
   background-color: #16db99;
   color: white;
@@ -242,6 +262,7 @@ body {
   cursor: pointer;
   transition: background-color 0.2s;
 }
+
 #new-order-btn:hover {
   background-color: #059669;
 }

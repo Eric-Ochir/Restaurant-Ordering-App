@@ -1,19 +1,22 @@
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+Grill House - Dynamic Ordering App
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+I built this as a solo project during the Scrimba Front-End Development path to practice DOM manipulation and intermediate JavaScript concepts. My goal was to move beyond static sites and create a functional, event-driven application that handles real-time data.
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+Tech Specs
+Used a central array to track cart items and calculate totals dynamically.
 
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+Integrated the uuid library to ensure every order item has a unique, trackable ID.
 
-Happy Coding!
+Built a custom validation layer for the checkout form to ensure names and card details follow specific patterns.
+
+Features
+Instead of attaching listeners to every "Add" button, I used a single global event listener. This optimizes memory usage and ensures that dynamically rendered items are automatically functional.
+
+Kept the menu data separate in data.js to simulate how a real application would pull information from an external API or database.
+
+Used modern JavaScript methods like .map(), .filter(), and .reduce() to handle data transformations cleanly and concisely.
+
+Tech Stack
+HTML5
+CSS3
+JavaScript
