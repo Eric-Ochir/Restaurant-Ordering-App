@@ -23,3 +23,6 @@ Tech Stack
 HTML5
 CSS3
 JavaScript
+
+Author
+Erdene-Ochir Ochirgarav 
